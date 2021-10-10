@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱艺艺（iYIYI.COM）是拥有海量、优质、高清的网络视频的大型视频网站，是一个专业的网络视频播放平台。 ">
+    <link rel="icon" href="images/favicon.ico">
+    <title>爱艺艺</title>
+    <link rel="stylesheet" href="css/film.css">
+    <!--    建立跨浏览器的一致性-->
+    <link rel="stylesheet" href="css/Normalize.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@bootcss/v3.bootcss.com@1.0.10/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--总导航栏-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!------button为实现响应式布局，如果在手机上查看，点击button就可以弹出菜单---->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>0
+                <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="#">爱艺艺</a>
+                </a>
+                <!---方log的地方-->
+            </div>
+
+            <!-- 当浏览器小于某个值时，点击button图标显示导航条的内容（注意这里的id与button 的id对应）-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--具体菜单项-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="tv.html">电视剧</a></li>
+                    <li><a href="film.html">电&nbsp;影</a></li>
+                    <li><a href="#">动&nbsp;漫</a></li>
+                    <li><a href="#">综&nbsp;艺</a></li>
+                    <li><a href="my.html">关于我</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <br/>
+    <br/>
+    <div class="container">
+<!--        轮播图-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="first-slide" src="images/zyq.jpg">
+                </div>
+                <div class="item">
+                    <img class="second-slide" src="images/gsl.jpg">
+                </div>
+                <div class="item">
+                    <img class="third-slide" src="images/cs.jpg">
+                </div>
+            </div>
+<!--            轮播的左右导航-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+<!--        页面分导航栏-->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm  hidden-md">
+                <span class="ma"><a href="#" style="color: #fff7f9">华语</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">美国</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">院线</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">2021</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">动作</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">青春</a></span>   ·
+                <span class="ma"><a href="#" style="color: #fff7f9">香港地区</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">惊悚</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">喜剧</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">动画</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">韩国</a></span>
+                <span class="ma"><a href="#" style="color: #fff7f9">全部 ></a></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10  col-md-offset-1">
+                <h2 style="color: #fff7f9">热门电影</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d9.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>红海行动</h3>
+                                <p>感受战士的热血</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d6.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>悬崖之上</h3>
+                                <p>值得一看的口碑电影</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d7.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>21座桥</h3>
+                                <p>高燃剧情</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d8.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>扫黑</h3>
+                                <p>感受正义的力量</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <h2 id="section-2" style="color: #fff7f9">为你推荐</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d9.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>红海行动</h3>
+                                <p>感受战士的热血</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d11.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>奇门相术</h3>
+                                <p>充满玄幻</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d12.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>我要我们在一起</h3>
+                                <p>催泪煽情片</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d8.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>扫黑</h3>
+                                <p>感受正义的力量</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2 id="section-3" style="color: #fff7f9">网络大电影</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d9.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>红海行动</h3>
+                                <p>感受战士的热血</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d6.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>悬崖之上</h3>
+                                <p>值得一看的口碑电影</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d7.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>21座桥</h3>
+                                <p>高燃剧情</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d8.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>扫黑</h3>
+                                <p>感受正义的力量</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <h2 id="section-4" style="color: #fff7f9">巨星大电影</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d9.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>红海行动</h3>
+                                <p>感受战士的热血</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d11.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>奇门相术</h3>
+                                <p>充满玄幻</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d12.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>我要我们在一起</h3>
+                                <p>催泪煽情片</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d8.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>扫黑</h3>
+                                <p>感受正义的力量</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h2 id="section-5" style="color: #fff7f9">金像奖历届佳片</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d9.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>红海行动</h3>
+                                <p>感受战士的热血</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d11.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>奇门相术</h3>
+                                <p>充满玄幻</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d12.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>我要我们在一起</h3>
+                                <p>催泪煽情片</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="course" align="center">
+                            <!--让图片与按钮居中-->
+                            <img src="images/d8.webp" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>扫黑</h3>
+                                <p>感受正义的力量</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br />
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-5">
+                <ul class="pagination ">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <!--页脚-->
+        <section id="contact">
+            <div class="lvjing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 fadeInLeft">
+                            <h2 class="color">
+                                <span class="glyphicon glyphicon-send color"></span>
+                                &nbsp;
+                                爱艺艺反馈中心
+                            </h2>
+                            <p class="color">
+                                爱艺艺是由阿里八八小组于2021年创立的在线视频网站，
+                                2021年启动“爱艺艺”品牌并推出全新标志。
+                                爱艺艺成立伊始，坚持“悦享品质”的公司理念，以“用户体验”为使命，
+                                通过持续不断的技术投入、产品创新，
+                                为用户提供清晰、流畅、界面友好的观影体验。
+                            </p>
+                            <address>
+                                <p class="color">
+                                    <span class="glyphicon glyphicon-home color"></span>
+                                    &nbsp;
+                                    地址:哈尔滨信息工程学院
+                                </p>
+                                <p class="color">
+                                    <span class="glyphicon glyphicon-phone-alt color"></span>
+                                    &nbsp;
+                                    联系电话：6666666666
+                                </p>
+                                <p class="color">
+                                    <span class="glyphicon glyphicon-envelope color"></span>
+                                    &nbsp;
+                                    邮箱:66666@爱艺艺.com
+                                </p>
+                            </address>
+                        </div>
+                        <div class="col-md-6  fadeInRight color">
+                            <form action="#" method="post" role="form">
+                                <!--当提交表单时，发送表单数据到名为 "#" 的文件-->
+                                <!--Bootstrap 表单  向父 <form> 元素添加 role="form"。
+                      把标签和控件放在一个带有 class .form-group 的 <div> 中。这是获取最佳间距所必需的。
+                      向所有的文本元素 <input>、<textarea> 和 <select> 添加 class ="form-control" 。
+                      placeholder 属性提供可描述输入字段预期值的提示信息（hint）。
+                      该提示会在输入字段为空时显示，并会在字段获得焦点时消失。-->
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control color" placeholder="您的姓名" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control color" placeholder="您的邮箱" />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control color" placeholder="标题" />
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea class="form-control color" placeholder="留言内容" rows="3"></textarea>
+                                    <!--想要显示placeholder里面的内容，中间必须不能有内容-->
+                                </div>
+                                <!--<textarea> 标签定义一个多行的文本框。文本区域中可容纳无限数量的文本
+           可以通过 cols 和 rows 属性来规定 textarea 的尺寸大小，不过更好的办法是使用 CSS 的 height 和 width 属性。-->
+                                <div class="col-md-8">
+                                    <input type="submit" class="form-control color" value="提交" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="color">
+                            爱艺艺网站还会为大家更新，敬请期待。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

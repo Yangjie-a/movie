@@ -1,0 +1,14 @@
+body {
+    background-color: #1f2128 !important;;
+}
+.ma {
+    display: inline-block;
+    margin: 20px;
+    color: whitesmoke;
+}
+.color {
+    color: whitesmoke!important;
+}
+.caption {
+    color: whitesmoke;
+}
